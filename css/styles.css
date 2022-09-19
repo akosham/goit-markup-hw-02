@@ -1,3 +1,10 @@
+:root{
+  --main-title-color: #212121;
+  --mail-font: 'Roboto', sans-serif;
+  --main-background: #F5F5F5;
+  --accent-color:#2196F3; 
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -10,10 +17,40 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* --------------header------------- */
 
 .header {
   background-color: white;
+}
+
+.header-logo{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3
+}
+
+.logo-link{
+  color: #000000;
+}
+
+.header-item{
+
 }
 
 .header-link {
@@ -64,6 +101,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hero{
@@ -74,8 +112,6 @@ body {
 
 .second-section {
   background-color: #F5F5F5;
-}
-.second-section-title { 
 }
 .second-section-list {
 }
@@ -156,8 +192,16 @@ body {
 
 .footer {
   background-color: #2F303A;;
+  font-family: 'Roboto', sans-serif;
 }
 .footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
 }
 .footer-address {
 }
@@ -166,6 +210,7 @@ body {
 .footer-item {
 }
 .footer-link-place{
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -173,6 +218,7 @@ body {
   color: #FFFFFF;
 }
 .footer-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
