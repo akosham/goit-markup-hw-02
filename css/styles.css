@@ -1,12 +1,16 @@
 :root{
   --main-title-color: #212121;
   --mail-font: 'Roboto', sans-serif;
-  --main-background: #F5F5F5;
+  --main-background: #FFFFFF;
   --accent-color:#2196F3; 
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -33,15 +37,17 @@ body {
 /* --------------header------------- */
 
 .header {
-  background-color: white;
+  background-color: #FFFFFF;
 }
+
+/* .header-list list{} */
+/* .header-item{} */
 
 .header-logo{
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color)
 }
 
@@ -49,37 +55,36 @@ body {
   color: #000000;
 }
 
-.header-item{
-
-}
-
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color:var(--main-title-color);
 }
 
 .header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.header-link-right {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
+.header-link:focus,
 .header-link-right:hover,
 .header-link-right:focus {
   color: var(--accent-color);
 }
 
+.current{
+  color: var(--accent-color);
+}
+
+.header-link-right {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 /* -------------hero------------- */
+
+.hero{
+  background-color:#2F303A;
+}
 
 .hero-title{
   font-weight: 900;
@@ -92,7 +97,7 @@ body {
 }
 
 .hero-btn {
-  font-family: inherit
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -101,11 +106,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background: var(--accent-color);
   cursor: pointer;
 }
 
-.hero{
-  background-color:#2F303A;
+.hero-btn:hover,
+.hero-btn:focus{
+  background: #188CE8;
 }
 
 /* ----------------second-section------------ */
@@ -113,22 +120,18 @@ body {
 .second-section {
   background-color: var(--main-background);
 }
-.second-section-list {
+/* .second-section-list {
 }
 .second-section-item {
-}
+} */
 .second-section-subtitle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   color:var(--main-title-color);
 }
 .second-section-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -141,15 +144,14 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.third-section-list {
+/* .third-section-list {
 }
 .third-section-item {
 }
 .third-section-images {
-}
+} */
 
 /* --------------------fourth-section------------- */
 
@@ -161,36 +163,33 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .fourth-section-list {
+  background-color: #FFFFFF;
 }
-.fourth-section-item {
+/* .fourth-section-item {
 }
 .fourth-section-images {
-}
+} */
 .fourth-section-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .fourth-section-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
 /* --------------footer------------- */
 
 .footer {
-  background-color: #2F303A;;
-  font-family: var(--mail-font);
+  background-color: #2F303A;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -201,39 +200,55 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.footer-address {
+
+.logo-link-footer{
+  color: #FFFFFF;
+}
+
+/* .footer-address {
 }
 .footer-list {
 }
 .footer-item {
-}
+} */
 .footer-link-place{
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #FFFFFF;
 }
+
+.footer-link-place:hover,
+.footer-link-place:focus{
+  color: var(--accent-color);
+}
+
 .footer-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* -----------------portfolio------------ */
-/* -----------------filters------------------ */
-
-.filters {
-  background-color:  #FFFFFF;
+.footer-link:hover,
+.footer-link:focus{
+  color: var(--accent-color);
 }
-.filers-list {
+
+
+/* -----------------portfolio------------ */
+/* -----------------project------------------ */
+
+.project {
+  background-color: var(--main-background);
+  color: var(--main-title-color);
+}
+
+/* .filers-list {
 }
 .filters-item {
-}
+} */
+
 .filters-btn {
   font-family: var(--mail-font)
   font-style: normal;
@@ -243,39 +258,31 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color:var(--main-title-color);
+  background: #F5F4FA;
   cursor: pointer;
 }
 .filters-btn:hover,
 .filters-btn:focus{
   color: #FFFFFF;
+  background-color: var(--accent-color);
 }
 
-/* ---------------------project---------------- */
-.project {
-  background-color: #FFFFFF;
-  color: #212121;
-}
-.project-list {
+/* .project-list {
 }
 .project-item {
 }
 .project-link {
-}
+} */
+
 .project-subtitle {
-  font-family: var(--mail-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em
-  color: #212121;
 }
 .project-text {
-  font-family: var(--mail-font);
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: #757575;
 }
